@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+          <script>
+              $(document).ready(function () {
+                  //jQuery event handler for clicking any h2 inside the accordion div. 
+                  $('.accordion h2').click(function () {
+                      //If the item they just clicked is hidden...
+                      if ($(this).next('section').is(':hidden')) {
+                          //...hide all dropdown panels.
+                          $('.accordion section').slideUp('fast');
+                      }
+                      //Toggle the paragraph below the term that was clicked.
+                      $(this).next('section').slideToggle('fast');
+                  });
+              });
+          </script>
+
+
+  <title>Strike FAQ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel = "stylesheet" href = "final.css">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+  <a href = "index.html"><div class = "page-header">Strike Cosmetics</div></a>
+
+ 
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li><a href="about.html">About</a></li>
+        <li><a href="store.html">Shop</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="store.html"> Products <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="eyeshadow.html">Eyeshadow</a></li>
+            <li><a href="eyeliner.html">Eyeliner</a></li>
+            <li><a href="foundation.html">Foudnation</a></li>
+          </ul>
+  
+  
+        <li><a href="map.html">Find Store</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+        <li><a href="rewards.html">Rewards</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  
+<section class="bgimage3">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <p>FAQ</p>
+            </div>
+          </div>
+        </div>
+</section>
+    
+<div class = "vid">
+        <h2>Frequently Asked Questions</h2>
+     </div>
+<br>
+
+<article>
+    <!-- Start all accordions -->
+    <div class="accordion">
+        <!-- Each item is a div with an h2 first, and section second. -->
+        <div>
+            <h2>Are your products cruelty free?</h2>
+            <section>
+                <!-- For best results, content in each section should be coded with p or other tags. -->
+                <p>Yes, we do not test our products on animals.</p>
+            </section>
+        </div>
+
+        <div>
+            <h2>Do you ship outside of the US?</h2>
+            <section>
+                <p>Currently No</p>
+            </section>
+        </div>
+
+        <div>
+            <h2>How long does it take for items to ship?</h2>
+            <section>
+                <p>About 5-7 business days</p>
+            </section>
+        </div>
+
+
+        <div>
+                <h2>Will there be more items coming in the future?</h2>
+                <section>
+                    <p>New products are set to arrive this summer</p>
+                </section>
+        </div>
+
+        <div>
+                <h2>Can I review your products on my YouTube Channel?</h2>
+                <section>
+                    <p>Absolutely Yes</p>
+                </section>
+        </div>
+    </div>
+    <!-- End accordion -->
+</article>
+
+<hr class="col-xs-12"> 
+
+<div class = "vid">
+        <h2>Important Policies</h2>
+     </div>
+    <br>
+<div class="row">
+        <div class="column2">
+          <h3>Return Policy</h3>
+        </div>
+        <div class="column2">
+          <p>Please allow 5-­7 business days from when the item is delivered for your returned order to be processed. You will be notified via email at the email address listed on your account when your order was placed. Please note that your banking institution may require additional time to process and post this transaction to your account once they have received the information from us (typically 3-­5 business days).
+
+                We can only issue a refund to the original form of payment used at the point of purchase. In the event you no longer have access to this account or it is no longer active, we will then process your refund in the form of a check mailed to the address in your customer profile which can take 4-6 weeks to process. Original shipping charges are nonrefundable.</p>
+        </div>
+      </div>
+      <hr class="col-xs-12"> 
+      <div class="row">
+            <div class="column2">
+              <h3>Our Testing Procedures</h3>
+            </div>
+            <div class="column2">
+              <p>Rapid advances in technology have allowed for the development of sophisticated scanning machines and recording techniques that can be used to safely study human volunteers.
+
+                    Brain imaging machines that can ‘see’ inside the brain can be used to monitor the progression and treatment of brain disease.  They can help researchers understand the causes by comparing with healthy volunteers.
+                    
+                    An innovative technique called microdosing can also be used in volunteers to measure how very small doses of potential new drugs behave in the human body. These microdoses are radio-labelled, injected into human volunteers and measured (usually in blood samples) using a very sensitive measuring device called an accelerator mass spectrometer.
+                    
+                    Less high-tech studies for nutrition, drug addiction and pain can also be carried out on consenting humans in the interest of advancing medical science. These studies can help replace animal tests.</p>
+            </div>
+          </div>
+          <hr class="col-xs-12"> 
+
+          <div class="row">
+                <div class="column2">
+                  <h3>Rewards Members</h3>
+                </div>
+                <div class="column2">
+                  <p>By participating in the Program, Member agrees to the terms and conditions, rules, regulations, policies and procedures of the Program, including these Terms and Conditions and the provisions below dealing with mandatory arbitration of all disputes on an individual (i.e., non-class action) basis. Each Member is responsible for remaining knowledgeable about the Program Terms and Conditions. Company reserves the right to disqualify Members who have violated any of the Program Terms and Conditions.</p>
+                </div>   <hr class="col-xs-12"> 
+              </div>
+           
+<footer>
+    <section id="lab_social_icon_footer">
+        <!-- Include Font Awesome Stylesheet in Header -->
+        <div class="container">
+                <div class="text-center center-block">
+                      <a href="https://instagram.com/"><i id="social-ig" class="fa fa-instagram fa-3x social"></i></a>
+                      <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                      <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                      <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+                      
+                      <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+            </div>
+        </div>
+        </section>
+</footer>
+
+</body>
+</html>

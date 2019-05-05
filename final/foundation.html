@@ -1,0 +1,135 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Strike Foundation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel = "stylesheet" href = "final.css">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+  <a href = "index.html"><div class = "page-header">Strike Cosmetics</div></a>
+
+ 
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li><a href="about.html">About</a></li>
+        <li><a href="store.html">Shop</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="store.html"> Products <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="eyeshadow.html">Eyeshadow</a></li>
+            <li><a href="eyeliner.html">Eyeliner</a></li>
+            <li><a href="foundation.html">Foudnation</a></li>
+          </ul>
+  
+  
+        <li><a href="map.html">Find Store</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+        <li><a href="rewards.html">Rewards</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+<script>
+        $(document).ready(function() {
+    $("#cf7_controls").on('click', 'span', function() {
+      $("#cf7 img").removeClass("opaque");
+  
+      var newImage = $(this).index();
+  
+      $("#cf7 img").eq(newImage).addClass("opaque");
+  
+      $("#cf7_controls span").removeClass("selected");
+      $(this).addClass("selected");
+    });
+  });
+    </script>
+<main class="container">
+
+        <!-- Left Column / Headphones Image -->
+        <div class="column1">
+                <div id="cf7" class="shadow">                        
+                        <img class='opaque' src="fair_b_1_800x1200.jpg" alt="fair">
+                        <img src="medium_b_800x1200.jpg" alt="Medium">
+                        <img src="dark_b_800x1200.jpg" alt="dark">
+                        <img src = "deep_dark_b_800x1200.jpg" alt="deepdark">
+                </div>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                      <p id="cf7_controls">
+                        <span class="selected">Fair</span>
+                        <span>Medium</span>
+                        <span>Dark</span>
+                        <span>Deep Dark</span>
+                     </p>
+        </div>
+
+        <hr>
+  
+  
+        <!-- Right Column -->
+        <div class="right-column">
+  
+          <!-- Product Description -->
+          <div class="product-description">
+            <h1>Foundation</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+  
+          <!-- Product Configuration -->
+         <div class = "select">
+            <select>
+                    <option value="purple">Fair</option>
+                    <option value="pink">Medium</option>
+                    <option value="orange">Dark</option>
+                    <option value="green">DeepDark</option>
+            </select>
+
+         </div>
+         <br><br>
+  
+          <!-- Product Pricing -->
+          <div class="product-price">
+            <span>$12.99</span>
+            <a href="#" class="cart-btn">Add to cart</a>
+          </div>
+        </div>
+      </main>
+
+      <hr>
+  
+      <!-- Scripts -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+      <script src="script.js" charset="utf-8"></script>
+
+<footer>
+    <section id="lab_social_icon_footer">
+        <!-- Include Font Awesome Stylesheet in Header -->
+        <div class="container">
+                <div class="text-center center-block">
+                      <a href="https://instagram.com/"><i id="social-ig" class="fa fa-instagram fa-3x social"></i></a>
+                      <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                      <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                      <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+                      
+                      <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+            </div>
+        </div>
+        </section>
+</footer>
+
+</body>
+</html>
